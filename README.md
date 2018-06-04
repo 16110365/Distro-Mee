@@ -1,7 +1,10 @@
 # Distro-Mee
 NIM :	(16.11.0365) (16.11.0346) (16.11.0375) (16.11.0345)
+
 Nama Startup : Distro Mee
+
 Fitur:
+
 I.	Awal 
 1.	Login : terdapat pilihan sign in dan sign up
 2.	Registrasi user : untuk melakukan shopping user harus registrasi
