@@ -17,7 +17,7 @@ II.	Utama
 4.	Testimoni & ranking produk : ini menggambarkan kepuasan pembeli terhadap produk yg dibelinya, ranking prdouk berupa bintang 1-5
 5.	Halaman dashboard : merupakan halaman yg dimiliki oleh penjual/pembeli setelah login, berisi daftar barang yg telah dibeli, daftar barang yg belum dikirim.
 6.	Live chat : fitur ini menghubungkan penjual dan pembeli
-7.	Produk terkait : fitur ini membantu pembeli
+7.	Produk terkait : fitur ini membantu pembeli untuk mengambil keputusan, membeli produk yang lain yang sejenis.
 8.	Metode pengiriman : menampilkan dengan jelas metode pengiriman apakah COD tau lewat jasa ekspedisi
 9.	Logo : logo dari app
 10.	Produk terpopuler : menampilkan prdouk yg popular saat ini
