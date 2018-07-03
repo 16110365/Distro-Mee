@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Distro-Mee a Ecommerce Online Shopping | Home</title>
+	<title>GDistro-Mee a Ecommerce Online Shopping | Home</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
@@ -12,16 +12,27 @@
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
 </head>
 	
 <body>
 <!-- header -->
 	<div class="agileits_header">
-		<div class="offers">
+		<div class="w3l_offers">
 			<a href="products.html">Today's special Offers !</a>
 		</div>
-		<div class="search">
+		<div class="w3l_search">
 			<form action="#" method="post">
 				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 				<input type="submit" value=" ">
@@ -32,16 +43,16 @@
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="Lihat Keranjang" class="button" />
                 </fieldset>
             </form>
 		</div>
-		<div class="header_right">
+		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
-						<div class="vegetables">
+						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<li><a href="masuk.html">Login</a></li> 
 								<li><a href="login.html">Sign Up</a></li>
@@ -51,29 +62,44 @@
 				</li>
 			</ul>
 		</div>
-		<div class="header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Kontak</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
 	<div class="logo_products">
 		<div class="container">
-			<div class="logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Distro-Mee</a></h1>
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Grosir</span>Distro-Mee</a></h1>
 			</div>
-			<div class="logo_products_left1">
+			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
 					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
+					<li><a href="about.html">Tentang Kami</a><i>/</i></li>
 					<li><a href="products.html">Best Deals</a><i>/</i></li>
 					<li><a href="services.html">Services</a></li>
 				</ul>
 			</div>
-			<div class="logo_products_left1">
+			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:Distro-Mee@grocery.com">Distro-Mee@grocery.com</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:Distro-Mee@Grosir.com">Distro-Mee@Grosir.com</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -85,14 +111,14 @@
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Checkout</li>
+				<li>Privacy Policy </li>
 			</ul>
 		</div>
 	</div>
 <!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
-		<div class="banner_nav_left">
+		<div class="w3l_banner_nav_left">
 			<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header nav_2">
@@ -105,12 +131,11 @@
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Branded Clothes <span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu vegetables_menu">
-								<div class="vegetables">
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
 									<ul>
 										<li><a href="vegetables.html">Airplane Systm</a></li>	
 										<li><a href="vegetables.html">Anything</a></li>
@@ -159,165 +184,44 @@
 <!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		<div class="banner_nav_right">
-<!-- about -->
-		<div class="privacy about">
-			<h3>Chec<span>kout</span></h3>
-			
-	      <div class="checkout-right">
-					<h4>Your shopping cart contains: <span>3 Products</span></h4>
-				<table class="timetable_sub">
-					<thead>
-						<tr>
-							<th>SL No.</th>	
-							<th>Product</th>
-							<th>Quality</th>
-							<th>Product Name</th>
-						
-							<th>Price</th>
-							<th>Remove</th>
-						</tr>
-					</thead>
-					<tbody><tr class="rem1">
-						<td class="invert">1</td>
-						<td class="invert-image"><a href="single.html"><img src="images/s5.jpg" alt=" " class="img-responsive"></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Depactus Overland Expressl</td>
-						
-						<td class="invert">Rp. 180.000</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close1"> </div>
-							</div>
+		<div class="w3l_banner_nav_right">
+<!-- privacy -->
+		<div class="privacy">
+				<div class="privacy1">
+				<h3>Privacy Policy</h3>
+				<div class="banner-bottom-grid1 privacy2-grid">
+					<div class="privacy2-grid1">
+						<h4>Kebijakan Privasi</h4>
+						<p>Adanya Kebijakan Privasi ini adalah komitmen nyata dari Tokopedia untuk menghargai dan melindungi setiap data atau informasi pribadi Pengguna situs www.tokopedia.com, situs-situs turunannya, serta aplikasi gawai Tokopedia (selanjutnya disebut sebagai "Situs").
 
-						</td>
-					</tr>
-					<tr class="rem2">
-						<td class="invert">2</td>
-						<td class="invert-image"><a href="single.html"><img src="images/s6.jpg" alt=" " class="img-responsive"></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Quiksilver Classic Morning</td>
-					
-						<td class="invert">Rp. 280.000</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close2"> </div>
-							</div>
+Kebijakan Privasi ini (beserta syarat-syarat penggunaan dari situs Tokopedia sebagaimana tercantum dalam "Syarat & Ketentuan" dan informasi lain yang tercantum di Situs) menetapkan dasar atas perolehan, pengumpulan, pengolahan, penganalisisan, penampilan, pembukaan, dan/atau segala bentuk pengelolaan yang terkait dengan data atau informasi yang Pengguna berikan kepada Tokopedia atau yang Tokopedia kumpulkan dari Pengguna, termasuk data pribadi Pengguna, baik pada saat Pengguna melakukan pendaftaran di Situs, mengakses Situs, maupun mempergunakan layanan-layanan pada Situs (selanjutnya disebut sebagai "data").
 
-						</td>
-					</tr>
-					<tr class="rem3">
-						<td class="invert">3</td>
-						<td class="invert-image"><a href="single.html"><img src="images/s12.jpg" alt=" " class="img-responsive"></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Fleece Pullover Hoodie</td>
-						
-						<td class="invert">Rp. 190.000</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close3"> </div>
-							</div>
-	
-						</td>
-					</tr>
-
-				</tbody></table>
-			</div>
-			<div class="checkout-left">	
-				<div class="col-md-4 checkout-left-basket">
-					<h4>Masukkan Keranjang</h4>
-					<ul>
-						<li>Product1 <i>-</i> <span>Rp. 180.000</span></li>
-						<li>Product2 <i>-</i> <span>Rp. 280.000 </span></li>
-						<li>Product3 <i>-</i> <span>Rp. 190.000</span></li>
-						<li>Total Service<i>-</i> <span>Rp.10.000</span></li>
-						<li>Total <i>-</i> <span>Rp. 560.000</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8 address_form_agile">
-					  <h4>Add a new Details</h4>
-				<form action="payment.html" method="post" class="creditly-card-form agileinfo_form">
-									<section class="creditly-wrapper wthree, w3_agileits_wrapper">
-										<div class="information-wrapper">
-											<div class="first-row form-group">
-												<div class="controls">
-													<label class="control-label">Full name: </label>
-													<input class="billing-address-name form-control" type="text" name="name" placeholder="Full name">
-												</div>
-												<div class="w3_agileits_card_number_grids">
-													<div class="w3_agileits_card_number_grid_left">
-														<div class="controls">
-															<label class="control-label">Mobile number:</label>
-														    <input class="form-control" type="text" placeholder="Mobile number">
-														</div>
-													</div>
-													<div class="w3_agileits_card_number_grid_right">
-														<div class="controls">
-															<label class="control-label">Alamat: </label>
-														 <input class="form-control" type="text" placeholder="Landmark">
-														</div>
-													</div>
-													<div class="clear"> </div>
-												</div>
-												<div class="controls">
-													<label class="control-label">Kota: </label>
-												 <input class="form-control" type="text" placeholder="Town/City">
-												</div>
-													<div class="controls">
-															<label class="control-label">Tipe Alamat: </label>
-												     <select class="form-control option">
-																							<option>Office</option>
-																							<option>Home</option>
-																							<option>Commercial</option>
+Dengan mengakses dan/atau mempergunakan layanan Tokopedia, Pengguna menyatakan bahwa setiap data Pengguna merupakan data yang benar dan sah, serta Pengguna memberikan persetujuan kepada Tokopedia untuk memperoleh, mengumpulkan, menyimpan, mengelola dan mempergunakan data tersebut sebagaimana tercantum dalam Kebijakan Privasi maupun Syarat dan Ketentuan Tokopedia</p>
+						<div class="privacy2-grid1-sub">
+							<h5>1. Perolehan dan Pengumpulan Data Pengguna</h5>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>2. Penggunaan Data</h5>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>3. Pengungkapan Data Pribadi Pengguna</h5>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>4. Cookies</h5>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>5. Pilihan Pengguna dan Transparansi</h5>
 							
-																					</select>
-													</div>
-											</div>
-											<button class="submit check_out">Deliver ke Alamat</button>
-										</div>
-									</section>
-								</form>
-									<div class="checkout-right-basket">
-				        	<a href="payment.html">Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-			      	</div>
+						</div>
 					</div>
-			
-				<div class="clearfix"> </div>
-				
+				</div>
 			</div>
-
 		</div>
-<!-- //about -->
+<!-- //privacy -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-
-
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
@@ -341,7 +245,7 @@
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
 					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
+					<li><a href="about.html">Tentang Kami</a></li>
 					<li><a href="products.html">Best Deals</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="short-codes.html">Short Codes</a></li>
@@ -399,80 +303,11 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2018 Grocery Distro-Mee. All rights reserved | Design by <a >Distro-Mee</a></p>
+				<p>© 2018 Grosir Distro-Mee. All rights reserved | Design by <a >Distro-Mee</a></p>
 			</div>
 		</div>
 	</div>
 <!-- //footer -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
-							 <!--quantity-->
-									<script>
-									$('.value-plus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
-										divUpd.text(newVal);
-									});
-
-									$('.value-minus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
-										if(newVal>=1) divUpd.text(newVal);
-									});
-									</script>
-								<!--quantity-->
-							<script>$(document).ready(function(c) {
-								$('.close1').on('click', function(c){
-									$('.rem1').fadeOut('slow', function(c){
-										$('.rem1').remove();
-									});
-									});	  
-								});
-						   </script>
-							<script>$(document).ready(function(c) {
-								$('.close2').on('click', function(c){
-									$('.rem2').fadeOut('slow', function(c){
-										$('.rem2').remove();
-									});
-									});	  
-								});
-						   </script>
-						  	<script>$(document).ready(function(c) {
-								$('.close3').on('click', function(c){
-									$('.rem3').fadeOut('slow', function(c){
-										$('.rem3').remove();
-									});
-									});	  
-								});
-						   </script>
-
-<!-- //js -->
-<!-- script-for sticky-nav -->
-	<script>
-	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
-		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
-			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
-			}else{
-				$(".agileits_header").removeClass("fixed");
-			}
-		 });
-		 
-	});
-	</script>
-<!-- //script-for sticky-nav -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>
