@@ -1178,7 +1178,7 @@ button.submit.check_out{
 	text-decoration: none;
 	position: fixed;
 	bottom: 20px;
-	right: 2%;
+	left: 2%;
 	overflow: hidden;
 	z-index: 999; 
 	width: 32px;
