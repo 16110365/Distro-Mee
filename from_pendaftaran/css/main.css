@@ -1,0 +1,18 @@
+body{
+	background: #9053c7;
+}
+
+.container{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.logo{
+	width: 500px;
+    height: 500px;
+    padding: 20px;
+}
+.from-horizontal{
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+}

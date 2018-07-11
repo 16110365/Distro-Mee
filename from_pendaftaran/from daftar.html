@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>From Pendaftaran</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+<body>
+	 
+	 <div class="container">	
+	 	<div class="row">
+	 		<div class="col-md-3 login-img">
+	 			<img src=" images/logo.png" class=" logo">
+	 		</div>
+        	<div class="col-md-offset-3 col-md-4 login-from">
+				<form class="from-horizontal">
+				  <div class="form-group">
+				  	<label for="nama">Nama</label>
+				    <input type="nama" class="form-control" id="name" placeholder="Masukan Nama Lengkap Anda">
+				  </div>
+				  <div class= "form-group" > 
+				  	<label> Jenis Kelamin </label>
+				  	 <div class= "radio" > 
+				  	 	<label> <input type= "radio" name= "optionsRadios" id= "optionsRadios1"  value= "option1" checked >Laki-Laki </label>
+				  	 </div>
+				  	 <div class= "radio" > 
+				  	 	<label> <input type= "radio" name= "optionsRadios" id= "optionsRadios2"  value= "option2" checked > Perempuan </label>
+				  	 </div>
+				  </div>
+				  <div class="form-group">
+				  	<label for="tempat-lahir"> Tempat Lahir</label>
+				    <input type="tempat_lahir" class="form-control" id="tempat_lahir" placeholder="Masukan Tempat Lahir Anda">
+				  </div>
+				  <div class="input-group from-inline date">
+				  	<label for="tanggal"> Tanggal Lahir</label>
+				    <input type="tanggal" class="form-control tanggal " id="tanggal" placeholder="Masukan Nama Lengkap Anda">
+				    <div class="input-group-addon">
+				        <span class="glyphicon glyphicon-th"></span>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="email">Email</label>
+				    <input type="email" class="form-control" id="email" placeholder="Masukan Email Anda">
+				  </div>
+				  <div class="form-group">
+				  	<label for="no_hp">No. HP</label>
+				    <input type="no_hp" class="form-control" id="no_hp" placeholder="Masukan No. HP Anda yang Digunakan Saat Ini">
+				  </div>
+				  <div class="form-group">
+				  	<label for="alamat">Alamat</label>
+				    <input type="alamat" class="form-control" id="alamat" placeholder="Masukan Alamat">
+				  </div>
+				  <div class="form-group">
+				    <label for="password">Password</label>
+				    <input type="password" class="form-control" id="password" placeholder="Masukan Password Yang Akan Digunakan">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>  
+		</div> 		
+	 </div>
+
+	 <script src="js/jquery.js"></script>
+	 <script src="bootstrap/js/bootstrap.js"></script>
+	 <script src="js/bootstrap-datepicker.js"></script>
+	 <script type="text/javascript">
+            $(document).ready(function () {
+                $('.tanggal').datepicker({
+                    format: "yyyy-mm-dd",
+                    autoclose:true
+                });
+            });
+        </script>
+     </script>
+</body>
+</html>
