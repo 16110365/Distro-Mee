@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/chat.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+ <script src='js/okzoom.js'></script>
+  <script>
+    $(function(){
+      $('#example').okzoom({
+        width: 150,
+        height: 150,
+        border: "1px solid black",
+        shadow: "0 0 5px #000"
+      });
+    });
+  </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Today's special Offers !</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="Lihat Keranjang" class="button" />
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="masuk.html">Login</a></li> 
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Kontak</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Grosir</span> Distro-Mee</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="events.html">Events</a><i>/</i></li>
+					<li><a href="about.html">Tentang Kami</a><i>/</i></li>
+					<li><a href="products.html">Best Deals</a><i>/</i></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:Distro-Mee@Grosir.com">Distro-Mee@Grosir.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>Single Page</li>
+			</ul>
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			 <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+			   <!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+
+					<ul class="nav navbar-nav nav_1">
+
+						<li class="dropdown mega-dropdown active">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Branded Clothes <span class="caret"></span></a>				
+
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+
+								<div class="w3ls_vegetables">
+
+									<ul>
+
+										<li><a href="productsairplane.html">Airplane Systm</a></li>	
+
+										<li><a href="productsanyway.html">Anyway</a></li>
+
+										<li><a href="productsblack.html">Black ID</a></li>
+
+										<li><a href="productsfamous.html">Famo</a></li>
+
+										<li><a href="productsgreen.html">Greenlight</a></li>
+
+										<li><a href="productsheyho.html">Heyho</a></li>
+
+										<li><a href="productsnimco.html">Nimco</a></li>
+
+										<li><a href="productsripcul.html">Ripcurl</a></li>
+
+										<li><a href="productsscream.html">Screamous</a></li>
+
+										<li><a href="productsvans.html">Vans</a></li>
+
+									</ul>
+
+
+
+								</div>                  
+
+							</div>				
+
+						</li>
+
+						<li><a href="jumper.html">Jumper</a></li>
+
+						<li><a href="shirt.html">Shirt</a></li>
+
+						<li><a href="tshirt.html">Tshirt</a></li>
+
+						<li><a href="new.html">New Arrival</a></li>
+
+						<li><a href="best.html">Best Seller</a></li>
+
+						<li><a href="index.html">Jackets</a></li>
+
+						<li><a href="index.html">Jeans</a></li>			
+
+						<li><a href="index.html">Sweatshirt & Hoodies</a></li>	
+
+						<li><a href="index.html">Black Heather</a></li>
+
+						<li><a href="index.html">Slim-Fit</a></li>
+
+						<li><a href="index.html">Relaxed</a></li>
+
+								
+
+					</ul>
+
+				 </div>
+
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+			<div class="w3l_banner_nav_right_banner3">
+				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			</div>
+			<div class="agileinfo_single">
+				<h5>Denim Abu-Abu</h5>
+				<div class="col-md-4 agileinfo_single_left">
+					<img id="example" src="images/a2.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-8 agileinfo_single_right">
+					<div class="rating1">
+						<span class="starRating">
+							<input id="rating5" type="radio" name="rating" value="5">
+							<label for="rating5">5</label>
+							<input id="rating4" type="radio" name="rating" value="4">
+							<label for="rating4">4</label>
+							<input id="rating3" type="radio" name="rating" value="3" checked>
+							<label for="rating3">3</label>
+							<input id="rating2" type="radio" name="rating" value="2">
+							<label for="rating2">2</label>
+							<input id="rating1" type="radio" name="rating" value="1">
+							<label for="rating1">1</label>
+						</span>
+					</div>
+					<div class="w3agile_description">
+						<h4>Description :</h4>
+						<p>Denim Abu- Abu ini berbahan Kaatun 60 % % polyster $0 %. yaman dan adem. untuk desain Sablon bisa request sesuai yang diinginkan dengan minimum order 10 pcs. untuk lebiih lengkapnya bisa langsung kontak dengan TOKO nya.</p>
+					</div>
+					<div class="snipcart-item block">
+						<div class="snipcart-thumb agileinfo_single_right_snipcart">
+							<h4>Rp. 50.000 <span>Rp. 120.000</span></h4>
+						</div>
+						<div class="snipcart-details agileinfo_single_right_details">
+							<form action="#" method="post">
+								<fieldset>
+									<input type="hidden" name="cmd" value="_cart" />
+									<input type="hidden" name="add" value="1" />
+									<input type="hidden" name="business" value=" " />
+									<input type="hidden" name="item_name" value="pulao basmati rice" />
+									<input type="hidden" name="amount" value="21.00" />
+									<input type="hidden" name="discount_amount" value="1.00" />
+									<input type="hidden" name="currency_code" value="USD" />
+									<input type="hidden" name="return" value=" " />
+									<input type="hidden" name="cancel_return" value=" " />
+									<input type="submit" name="submit" value="Add to cart" class="button" />
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="_2_9PlD">
+						<svg class="shopee-svg-icon _15qzFT" viewbox="0 0 15 15" x="0" y="0">
+						<path clip-rule="evenodd" d="m6.1 1h-4.2c-.5 0-.9.4-.9.8v3.3c0 .5.4.9.9.9h4.3c.4 0 .8-.4.8-.8v-3.4c0-.4-.4-.8-.9-.8zm-.5 2h-3.2c-.2 0-.4-.2-.4-.5s.2-.5.4-.5h3.2c.2 0 .4.2.4.5s-.2.5-.4.5z" fill-rule="evenodd"></path>
+						<path d="m14.6 13h-14.2c-.2 0-.4.2-.4.4v.7c0 .2.2.4.4.4h14.1c.2 0 .4-.2.4-.4v-.7c.1-.2-.1-.4-.3-.4z"></path>
+						<path clip-rule="evenodd" d="m6.1 7h-4.2c-.5 0-.9.4-.9.8v3.3c0 .5.4.9.9.9h4.3c.4 0 .8-.4.8-.8v-3.4c0-.4-.4-.8-.9-.8zm-.5 2h-3.2c-.2 0-.4-.2-.4-.5s.2-.5.4-.5h3.2c.2 0 .4.2.4.5s-.2.5-.4.5z" fill-rule="evenodd"></path>
+						<path clip-rule="evenodd" d="m13.1 7h-4.2c-.5 0-.9.4-.9.8v3.3c0 .5.4.9.9.9h4.3c.5 0 .9-.4.9-.8v-3.4c-.1-.4-.5-.8-1-.8zm-.5 2h-3.2c-.2 0-.4-.2-.4-.5s.2-.5.4-.5h3.2c.2 0 .4.2.4.5s-.2.5-.4.5z" fill-rule="evenodd"></path></svg>
+						<table class="_20kodm">
+						<thead>
+							<tr class="_26yV4v">
+								<th class="_2OGi3A">grosir</th>
+								<th class="_2OGi3A">Kuantitas</th>
+								<th class="_2OGi3A">harga satuan</th>
+								<th class="_2OGi3A">Hemat</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="_3jZ0zC"></td>
+								<td class="_3jZ0zC">≥ 10</td>
+								<td class="_3jZ0zC _3hC7Yj">Rp50.000</td>
+								<td class="_3jZ0zC">Rp3.000</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+					<div class="shopee-product-info-body__order-block">
+						<div class="shopee-product-info-body__row shopee-product-info-body__variations-row">
+							<div class="shopee-product-info-body__info-label" style="width: 100px;">
+							Variasi:
+							</div>
+							<div class="shopee-product-info-body__info-content shopee-product-info-body__variations">
+							<button class="product-variation">L</button><button class="product-variation">M</button>
+							</div>
+						</div>
+						<div class="shopee-product-info-body__row shopee-product-info-body__order-quantity-row">
+							<div class="shopee-product-info-body__info-label" style="width: 100px;">
+							Kuantitas:
+							</div>
+							<div class="shopee-product-info-body__info-content">
+							<div class="shopee-product-info-body__order-quantity">
+							<div class="shopee-input-quantity">
+							<button class="shopee-button-outline"><svg class="shopee-svg-icon" viewbox="0 0 10 10" x="0" y="0">
+							<polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon></svg></button><input class="shopee-button-outline shopee-button-outline-mid" type="text" value="1"><button class="shopee-button-outline"><svg class="shopee-svg-icon icon-plus-sign" viewbox="0 0 10 10" x="0" y="0">
+							<polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon></svg></button>
+							</div><span class="shopee-product-info-body__order-quantity__stock-count"></span>
+							</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+<!-- owners -->
+<div class="product-page-seller-info card v-center">
+		<div class="product-page-seller-info__section-1">
+			<div class="product-page-seller-info__header-wrapper">
+				<a class="product-page-seller-info__header-portrait" href="/rismatrie">
+				<div class="shopee-avatar">
+				<div class="shopee-avatar__placeholder">
+					<svg class="shopee-svg-icon icon-headshot" viewbox="0 0 15 15" x="0" y="0">
+					<g>
+						<circle cx="7.5" cy="4.5" fill="none" r="3.8" stroke-miterlimit="10"></circle>
+						<path d="m1.5 14.2c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="none" stroke-linecap="round" stroke-miterlimit="10"></path>
+					</g></svg>
+				</div><img class="shopee-avatar__img" src="https://cf.shopee.co.id/file/9e8d4190ea540d26456d38abd22d7e44_tn"></div>
+				<div class="shopee-preferred-seller-badge-round">
+					<svg class="shopee-svg-icon icon-tick-bold" viewbox="0 0 12 12" x="0" y="0">
+					<g>
+						<path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
+					</g></svg>
+				</div></a>
+				<div class="product-page-seller-info__header-info">
+					<a class="product-page-seller-info__name-status" href="/rismatrie">
+					<div class="product-page-seller-info__user-status">
+						<div class="product-page-seller-info__shop-name">
+							rismatrie
+						</div>
+						<div class="product-page-seller-info__active-time">
+							Aktif 3 jam lalu
+						</div>
+					</div></a>
+					<div class="product-page-seller-info__buttons">
+						<a class="product-page-seller-info__view-shop" href="/rismatrie"><button class="btn btn-light btn--s btn--inline">kunjungi toko</button></a><button class="btn btn-light btn--s btn--inline">ikuti</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product-page-seller-info__section-2">
+			<div class="product-page-seller-info__item product-page-seller-info__item--click">
+				<div class="product-page-seller-info__item__wrapper">
+					<div class="product-page-seller-info__item__header">
+						<svg class="shopee-svg-icon icon-products" viewbox="0 0 15 15" x="0" y="0">
+						<g>
+							<path d="m10 1 4.5 2.5-.5 3h-2v7.5h-9v-7.5h-2l-.5-3 4.6-2.5c.3 1.1 1.3 1.9 2.4 1.9s2.1-.8 2.5-1.9z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+							<line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="3" x2="12" y1="11.5" y2="11.5"></line>
+						</g></svg><span class="product-page-seller-info__item__primary-text">7</span>
+					</div>
+					<div class="product-page-seller-info__item__complement-text">
+						produk
+					</div>
+				</div>
+				<div class="product-page-seller-info__item__separator"></div>
+			</div>
+			<div class="product-page-seller-info__item product-page-seller-info__item--click">
+				<div class="product-page-seller-info__item__wrapper">
+					<div class="product-page-seller-info__item__header">
+						<svg class="shopee-svg-icon icon-rating" viewbox="0 0 15 15" x="0" y="0">
+						<polygon fill="none" points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polygon></svg><span class="product-page-seller-info__item__primary-text">4.7</span>
+					</div>
+					<div class="product-page-seller-info__item__complement-text">
+						Penilaian
+					</div>
+				</div>
+				<div class="product-page-seller-info__item__separator"></div>
+			</div>
+			<div class="product-page-seller-info__item product-page-seller-info__item--click">
+				<div class="product-page-seller-info__item__wrapper">
+					<div class="product-page-seller-info__item__header">
+						<svg class="shopee-svg-icon" viewbox="0 0 15 15" x="0" y="0">
+						<g>
+							<polygon fill="none" points="14 10.8 7 10.8 3 13.8 3 10.8 1 10.8 1 1.2 14 1.2" stroke-linejoin="round" stroke-miterlimit="10"></polygon>
+							<circle cx="4" cy="5.8" r="1" stroke="none"></circle>
+							<circle cx="7.5" cy="5.8" r="1" stroke="none"></circle>
+							<circle cx="11" cy="5.8" r="1" stroke="none"></circle>
+						</g></svg><span class="product-page-seller-info__item__primary-text">90%</span>
+					</div>
+					<div class="product-page-seller-info__item__complement-text">
+						Persentase Chat Dibalas
+					</div>
+				</div>
+				<div class="product-page-seller-info__item__separator"></div>
+			</div>
+			<div class="product-page-seller-info__item">
+				<div class="product-page-seller-info__item__wrapper">
+					<div class="product-page-seller-info__item__header">
+						<svg class="shopee-svg-icon" viewbox="0 0 15 15" x="0" y="0">
+						<g>
+							<polyline fill="none" points="7.2 3.5 7.2 7.8 10.5 7.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+							<circle cx="7.5" cy="7.5" fill="none" r="6.5" stroke-miterlimit="10"></circle>
+						</g></svg><span class="product-page-seller-info__item__primary-text product-page-seller-info__item__primary-text--capitalized">hitungan jam</span>
+					</div>
+					<div class="product-page-seller-info__item__complement-text">
+						Waktu Chat Dibalas
+					</div>
+				</div>
+				<div class="product-page-seller-info__item__separator"></div>
+			</div>
+			<div class="product-page-seller-info__item">
+				<div class="product-page-seller-info__item__wrapper">
+					<div class="product-page-seller-info__item__header">
+						<svg class="shopee-svg-icon" viewbox="0 0 15 15" x="0" y="0">
+						<g>
+							<circle cx="6.8" cy="4.2" fill="none" r="3.8" stroke-miterlimit="10"></circle>
+							<polyline fill="none" points="9.2 12.5 11.2 14.5 14.2 11" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+							<path d="m .8 14c0-3.3 2.7-6 6-6 2.1 0 3.9 1 5 2.6" fill="none" stroke-linecap="round" stroke-miterlimit="10"></path>
+						</g></svg><span class="product-page-seller-info__item__primary-text">11 bulan lalu</span>
+					</div>
+					<div class="product-page-seller-info__item__complement-text">
+						bergabung
+					</div>
+				</div>
+				<div class="product-page-seller-info__item__separator"></div>
+			</div>
+		</div>
+	</div>
+<!-- //Owners -->
+<!-- brands -->
+<div class="top-brands">
+
+		<div class="container">
+
+			<h3>Best Sales</h3>
+
+			<div class="agile_top_brands_grids">
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s4.jpg" /></a>		
+
+											<p>Jersey Long Sleeve</p>
+
+											<h4>Rp. 180.000 <span>Rp. 230.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s5.jpg" /></a>		
+
+											<p>Depactus Overland Express</p>
+
+											<h4>Rp. 200.000<span>Rp. 250.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s6.jpg" /></a>		
+
+											<p>Quiksilver Classic Morning</p>
+
+											<h4>Rp. 210.000<span>Rp. 290.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s7.jpg" /></a>		
+
+											<p>Fleece Pullover Hoodie</p>
+
+											<h4>Rp. 200.000<span>Rp. 250.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s8.jpg" /></a>		
+
+											<p>Vans Classic Vest</p>
+
+											<h4>Rp. 200.000<span>Rp. 250.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s9.jpg" /></a>		
+
+											<p>Rip Curl Calif </p>
+
+											<h4>Rp. 190.000<span>Rp. 250.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s10.jpg" /></a>		
+
+											<p>Rip Curl Cool Travel </p>
+
+											<h4>Rp. 280.000<span>Rp. 350.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 top_brand_left">
+
+					<div class="hover14 column">
+
+						<div class="agile_top_brand_left_grid">
+
+							<div class="agile_top_brand_left_grid1">
+
+								<figure>
+
+									<div class="snipcart-item block" >
+
+										<div class="snipcart-thumb">
+
+											<a href="single.html"><img title=" " alt=" " src="images/s11.jpg" /></a>		
+
+											<p>FSponge Fleece Drop</p>
+
+											<h4>Rp. 150.000<span>Rp. 250.000</span></h4>
+
+										</div>
+
+										<div class="snipcart-details top_brand_home_details">
+
+											<form action="#" method="post">
+
+												<fieldset>
+
+													<input type="hidden" name="cmd" value="_cart" />
+
+													<input type="hidden" name="add" value="1" />
+
+													<input type="hidden" name="business" value=" " />
+
+													<input type="hidden" name="item_name" value="basmati rise" />
+
+													<input type="hidden" name="amount" value="11.99" />
+
+													<input type="hidden" name="discount_amount" value="1.00" />
+
+													<input type="hidden" name="currency_code" value="USD" />
+
+													<input type="hidden" name="return" value=" " />
+
+													<input type="hidden" name="cancel_return" value=" " />
+
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+
+												</fieldset>
+
+											</form>
+
+										</div>
+
+									</div>
+
+								</figure>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="clearfix"> </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+<!-- //brands -->
+<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_left">
+				<h3>sign up for our newsletter</h3>
+			</div>
+			<div class="w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="subscribe now">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>information</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="events.html">Events</a></li>
+					<li><a href="about.html">Tentang Kami</a></li>
+					<li><a href="products.html">Best Deals</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="short-codes.html">Short Codes</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policy info</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">FAQ</a></li>
+					<li><a href="privacy.html">privacy policy</a></li>
+					<li><a href="privacy.html">terms of use</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>what in stores</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="pet.html">Shirt</a></li>
+					<li><a href="frozen.html">T-shirt</a></li>
+					<li><a href="kitchen.html">Shoes</a></li>
+					<li><a href="products.html">Branded Clothes</a></li>
+					<li><a href="household.html">Jeans</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>twitter posts</h3>
+				<ul class="w3_footer_grid_list1">
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>I'm so happy shopping here <a href="#">http://dwfreverve</a>
+						NIce Product
+						<a href="#">http://vfdvefvev</a>Pelayanan memuaskan</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>sukak bangett</i><span>Barang cepat sampai <a href="#">http://vfevefbweb</a>
+						barang berkualitas
+						<a href="#">http://afsvavssdc</a>Distro-Mee the best</span></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% secure payments</h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>connect with us</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>© 2018 Grosir Distro-Mee. All rights reserved | Design by <a >Distro-Mee</a></p>
+			</div>
+			<!--start chat-->
+			<div class="fabs">
+				<div class="chat">
+					<div class="chat_header">
+						<div class="chat_option">
+							<div class="header_img">
+								<img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg" />
+							</div>
+							<span id="chat_head">Jane Doe</span>
+							<br> <span class="agent">Agent</span> <span class="online">(Online)</span>
+							<span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i class="fullscreen zmdi zmdi-window-maximize"></i></span>
+
+						</div>
+
+					</div>
+					<div class="chat_body chat_login">
+						<a id="chat_first_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+						<p>We make it simple and seamless for businesses and people to talk to each other. Ask us anything</p>
+					</div>
+					<div id="chat_converse" class="chat_conversion chat_converse">
+						<a id="chat_second_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Hey there! Any question?</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Hello!</span>
+						<span class="status">20m ago</span>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Hey! Would you like to talk sales, support, or anyone?</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+						<span class="status2">Just now. Not seen yet</span>
+					</div>
+					<div id="chat_body" class="chat_body">
+						<div class="chat_category">
+							<a id="chat_third_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+							<p>What would you like to talk about?</p>
+							<ul>
+								<li>Tech</li>
+								<li class="active">Sales</li>
+								<li>Pricing</li>
+								<li>other</li>
+							</ul>
+						</div>
+
+					</div>
+					<div id="chat_form" class="chat_converse chat_form">
+						<a id="chat_fourth_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Hey there! Any question?</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Hello!</span>
+						<span class="status">20m ago</span>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Agent typically replies in a few hours. Don't miss their reply.
+					<div>
+					  <br>
+					  <form class="get-notified">
+						  <label for="chat_log_email">Get notified by email</label>
+						  <input id="chat_log_email" placeholder="Enter your email"/>
+						  <i class="zmdi zmdi-chevron-right"></i>
+					  </form>
+					</div></span>
+
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Send message to agent.
+					<div>
+					  <form class="message_form">
+						  <input placeholder="Your email"/>
+						  <input placeholder="Technical issue"/>
+						  <textarea rows="4" placeholder="Your message"></textarea>
+						  <button>Send</button> 
+					  </form>
+
+				</div></span>
+					</div>
+					<div id="chat_fullscreen" class="chat_conversion chat_converse">
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Hey there! Any question?</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Hello!</span>
+						<div class="status">20m ago</div>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					</div>Hey! Would you like to talk sales, support, or anyone?</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					 </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					Where can I get some?</span>
+						<span class="chat_msg_item chat_msg_item_admin">
+					<div class="chat_avatar">
+					   <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+					 </div>The standard chuck...</span>
+						<span class="chat_msg_item chat_msg_item_user">
+					There are many variations of passages of Lorem Ipsum available</span>
+						<div class="status2">Just now, Not seen yet</div>
+						<span class="chat_msg_item ">
+				  <ul class="tags">
+					<li>Hats</li>
+					<li>T-Shirts</li>
+					<li>Pants</li>
+				  </ul>
+			  </span>
+					</div>
+					<div class="fab_field">
+						<a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>
+						<a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
+						<textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+					</div>
+				</div>
+				<a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
+			</div>
+			<!--end chat-->
+			
+		</div>
+	</div>
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/chat.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body>
+</html>
