@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distro-Mee a Ecommerce Online Shopping | Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
+    
+<body>
+<!-- header -->
+    <div class="agileits_header">
+        <div class="w3l_offers">
+            <a href="products.html">Today's special Offers !</a>
+        </div>
+        <div class="w3l_search">
+            <form action="#" method="post">
+                <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+                <input type="submit" value=" ">
+            </form>
+        </div>
+        <div class="product_list_header">  
+            <form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="Lihat Keranjang" class="button" />
+                </fieldset>
+            </form>
+        </div>
+        <div class="w3l_header_right">
+            <ul>
+                <li class="dropdown profile_details_drop">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+                    <div class="mega-dropdown-menu">
+                        <div class="w3ls_vegetables">
+                            <ul class="dropdown-menu drp-mnu">
+                                <li><a href="signin.html">Login</a></li> 
+                                <li><a href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </div>                  
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div class="w3l_header_right1">
+            <h2><a href="mail.html">Kontak</a></h2>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+    <div class="logo_products">
+        <div class="container">
+            
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+    <div class="products-breadcrumb">
+        <div class="container">
+            <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+                <li>Produkku</li>
+            </ul>
+        </div>
+    </div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+   
+<!-- payment -->
+        <div class="privacy about">
+            <h3>Tambah Produk</h3>
+            
+             <div class="checkout-right">
+                <!--Horizontal Tab-->
+        <div id="parentHorizontalTab">
+            <ul class="resp-tabs-list hor_1">
+                <li>Informasi Produk</li>
+                
+            </ul>
+            <div class="resp-tabs-container hor_1">
+                
+                <div>
+                    <div id="tab4" class="tab-grid" style="display: block;">
+                            <div class="row">
+                        <div class="col-md-6">
+                            <div style="border: 2px #d8d8d8 dashed; padding: 10px; background-color:  #eaeaea; overflow: auto; height: 400px; width: 400px; text-align: ; tex"></div>
+                            <p>Silahkan Pilih Gambar Produk anda</p><a class="btn btn-primary">Pilih Gambar</a>   
+                        </div>
+                        <div class="col-md-6">
+                            <form class="cc-form">
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-number">
+                                        <label>Nama Produk</label>
+                                        <input class="form-control" placeholder="Nama Produk" type="text"><span class="cc-card-icon"></span>
+                                    </div>
+                                    <div class="form-group form-group-cc-cvc">
+                                        <label>Deskripsi</label>
+                                        <input class="form-control" placeholder="Deskripsi" type="text">
+                                    </div>
+                                   <div class="form-group form-group-cc-number">
+                                    <label>Kategori</label>
+                                        <form action="#" method="post">
+                                         <div class="section_room_pay">
+                                            <select class="year">
+                                                <option value="">=== Pilih Kategori ===</option>
+                                                <option value="ALB-NA">Jacket</option>
+                                                <option value="ADB-NA">T-Shirt</option>
+                                                <option value="BBK-NA">Shirt</option>
+                                                <option value="BBC-NA">Jumper</option>
+                                                <option value="BBR-NA">Slim-fit</option>
+                                                <option value="BOI-NA">Relaxed</option>
+                                                <option value="BOM-NA">Hoodie</option>
+                                                <option value="CSB-NA">Sweater</option>
+                                                <option value="CBI-NA">Jeans</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-name">
+                                        <label>Berat Produk</label>
+                                        <input class="form-control" type="text" placeholder="Berat Produk/kg">
+                                    </div>
+                                    <div class="form-group form-group-cc-date">
+                                        <label>Harga Produk</label>
+                                        <input class="form-control" placeholder="Harga Produk" type="text">
+                                    </div>
+                                </div>
+                                <input class="btn btn-primary submit" type="submit" class="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                        
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    <!--Plug-in Initialisation-->
+
+    <!-- // Pay -->
+    
+             </div>
+
+        </div>
+<!-- //payment -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<!-- //banner -->
+
+
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- easy-responsive-tabs -->    
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+<script src="js/easyResponsiveTabs.js"></script>
+<!-- //easy-responsive-tabs --> 
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //Horizontal Tab
+        $('#parentHorizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+<!-- credit-card -->
+        <script type="text/javascript" src="js/creditly.js"></script>
+        <link rel="stylesheet" href="css/creditly.css" type="text/css" media="all" />
+
+        <script type="text/javascript">
+            $(function() {
+              var creditly = Creditly.initialize(
+                  '.creditly-wrapper .expiration-month-and-year',
+                  '.creditly-wrapper .credit-card-number',
+                  '.creditly-wrapper .security-code',
+                  '.creditly-wrapper .card-type');
+
+              $(".creditly-card-form .submit").click(function(e) {
+                e.preventDefault();
+                var output = creditly.validate();
+                if (output) {
+                  // Your validated credit card output
+                  console.log(output);
+                }
+              });
+            });
+        </script>
+    <!-- //credit-card -->
+
+<!-- //js -->
+<!-- script-for sticky-nav -->
+    <script>
+    $(document).ready(function() {
+         var navoffeset=$(".agileits_header").offset().top;
+         $(window).scroll(function(){
+            var scrollpos=$(window).scrollTop(); 
+            if(scrollpos >=navoffeset){
+                $(".agileits_header").addClass("fixed");
+            }else{
+                $(".agileits_header").removeClass("fixed");
+            }
+         });
+         
+    });
+    </script>
+<!-- //script-for sticky-nav -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+                                
+            $().UItoTop({ easingType: 'easeOutQuart' });
+                                
+            });
+    </script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.js"></script>
+<script>
+        paypal.minicart.render();
+
+        paypal.minicart.cart.on('checkout', function (evt) {
+            var items = this.items(),
+                len = items.length,
+                total = 0,
+                i;
+
+            // Count the number of each item in the cart
+            for (i = 0; i < len; i++) {
+                total += items[i].get('quantity');
+            }
+
+            if (total < 3) {
+                alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+                evt.preventDefault();
+            }
+        });
+
+    </script>
+</body>
+</html>
